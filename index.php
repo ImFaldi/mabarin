@@ -6,27 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
-    <style>
-        p:before{
-            content: "";
-            display: block;
-            width: 25%;
-            height: 2px;
-            background: whitesmoke;
-            position: absolute;
-            left: 20%;
-            top: 80%;
-        }
-        .tengah{
-            margin-left: 50%;
-            margin-top: 9%;
-        }
-    </style>
 </head>
 
 <body style="background-color: #141414;">
     <div class="container-fluid">
-        <nav class="navbar bg-body-dark border-bottom">
+        <nav class="navbar bg-body-dark border-bottom sticky-top">
             <div class="container-fluid">
                 <img src="assets/LOGO.png" alt="logo">
                 <form class="d-flex" role="search">
@@ -39,7 +23,7 @@
 
     <div class="container">
         <div class="d-flex justify-content-center">
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide mb-5" data-bs-touch="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assets/game_lists.png" class="d-block w-70" alt="...">
@@ -55,7 +39,244 @@
                 </button>
             </div>
         </div>
+
+        <div class="row mt-5 mb-5">
+            <div class="col-5 mt-3 d-flex justify-content-end">
+                <div style="border-top: 1px solid #FFF; width: 240px;"></div>
+            </div>
+            <div class="col-2">
+                <p class="text-center" style="color: #FF9212; font-size: 24px;">Pemilihan Mode</p>
+            </div>
+            <div class="col-5 mt-3">
+                <div style="border-top: 1px solid #FFF;  width: 240px;"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-5">
+                <div class="card border border-0" style="background-color: #141414;">
+                    <div class="card-body">
+                        <h5 class="card-title text-light text-center">Kompetitif</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <div style="border-top: 1px solid #535353; width: 240px;"></div>
+                        </div>
+                        <ul class="list-group mt-5 boder border-0">
+                            <li class="list-group-item boder border-0" style="background-color: #141414;">
+                                <input class="form-check-input me-1 boder mt-3" type="radio" name="listGroupRadio" value="" id="firstRadio" style="background-color: #141414; border: 3px solid #FAFF12;">
+                                <label class="form-check-label text-light" for="firstRadio">
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-size: 18px;">Duo</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-weight: 100;">Main bersama dua orang </label></div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="list-group-item boder border-0" style="background-color: #141414;">
+                                <input class="form-check-input me-1 boder mt-3" type="radio" name="listGroupRadio" value="" id="firstRadio" style="background-color: #141414; border: 3px solid #FAFF12;">
+                                <label class="form-check-label text-light" for="firstRadio">
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-size: 18px;">Team</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-weight: 100;">Main full team bersama teman</label></div>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-center mt-5">
+                            <div style="border-top: 1px solid #535353; width: 240px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card border border-0" style="background-color: #141414;">
+                    <div class="card-body">
+                        <h5 class="card-title text-light text-center">Coaching</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <div style="border-top: 1px solid #535353; width: 240px;"></div>
+                        </div>
+                        <ul class="list-group mt-5 boder border-0">
+                            <li class="list-group-item boder border-0" style="background-color: #141414;">
+                                <input class="form-check-input me-1 boder mt-3" type="radio" name="listGroupRadio" value="" id="firstRadio" style="background-color: #141414; border: 3px solid #FAFF12;">
+                                <label class="form-check-label text-light" for="firstRadio">
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-size: 18px;">Full Coach</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-weight: 100;">Sesi coaching bersama pemain pro</label></div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="list-group-item boder border-0" style="background-color: #141414;">
+                                <input class="form-check-input me-1 boder mt-3" type="radio" name="listGroupRadio" value="" id="firstRadio" style="background-color: #141414; border: 3px solid #FAFF12;">
+                                <label class="form-check-label text-light" for="firstRadio">
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-size: 18px;">Live Coaching</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-weight: 100;">Melihat coaching secara live</label></div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="list-group-item boder border-0" style="background-color: #141414;">
+                                <input class="form-check-input me-1 boder mt-3" type="radio" name="listGroupRadio" value="" id="firstRadio" style="background-color: #141414; border: 3px solid #FAFF12;">
+                                <label class="form-check-label text-light" for="firstRadio">
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-size: 18px;">Online Coaching</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-weight: 100;">Sesi coaching secara tidak langsung / Online</label></div>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-center mt-5">
+                            <div style="border-top: 1px solid #535353; width: 240px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card border border-0" style="background-color: #141414;">
+                    <div class="card-body">
+                        <h5 class="card-title text-light text-center">Kasual</h5>
+                        <div class="d-flex justify-content-center mt-4">
+                            <div style="border-top: 1px solid #535353; width: 240px;"></div>
+                        </div>
+                        <ul class="list-group mt-5 boder border-0">
+                            <li class="list-group-item boder border-0" style="background-color: #141414;">
+                                <input class="form-check-input me-1 boder mt-3" type="radio" name="listGroupRadio" value="" id="firstRadio" style="background-color: #141414; border: 3px solid #FAFF12;">
+                                <label class="form-check-label text-light" for="firstRadio">
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-size: 18px;">Duo</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-weight: 100;">Sesi bermain bersama dua orang</label></div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="list-group-item boder border-0" style="background-color: #141414;">
+                                <input class="form-check-input me-1 boder mt-3" type="radio" name="listGroupRadio" value="" id="firstRadio" style="background-color: #141414; border: 3px solid #FAFF12;">
+                                <label class="form-check-label text-light" for="firstRadio">
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-size: 18px;">Team</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-weight: 100;">Bermain bersama team</label></div>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="list-group-item boder border-0" style="background-color: #141414;">
+                                <input class="form-check-input me-1 boder mt-3" type="radio" name="listGroupRadio" value="" id="firstRadio" style="background-color: #141414; border: 3px solid #FAFF12;">
+                                <label class="form-check-label text-light" for="firstRadio">
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-size: 18px;">Team vs Team</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><label class="form-check-label text-light" for="firstRadio" style="font-weight: 100;">Bermain dalam custom match</label></div>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-center mt-5">
+                            <div style="border-top: 1px solid #535353; width: 240px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="d-flex justify-content-center">
+                <div style="border-top: 1px solid #FFF; width: 220px;"></div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn" style="background-color: #FAFF12; width: 15%;">
+                    <p class="text-center mt-1" style="color: #141414; font-size: 20px; font-weight: 800;">Cari Teman</p>
+                    <div class="d-flex justify-content-center mt-1">
+                        <div style="border-top: 2px solid black; width: 220px;"></div>
+                    </div>
+                    <p class="text-center mt-2" style="color: #141414; font-size: 20px; font-weight: 800;">Rp. 1000</p>
+                </button>
+            </div>
+        </div>
+        <div class="row mt-3 ">
+            <div class="d-flex justify-content-center mb-5">
+                <div style="border-top: 1px solid #FFF; width: 220px;"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h1 class="text-light text-center">Buruan Skuy,</h1>
+            <p class="text-light text-center mt-2">Cari teman mabar dengan mudah dan cepat biar semakin asik!</p>
+        </div>
+
+        <div class="row" style="margin-top: 15%;">
+            <div class="d-flex justify-content-center mb-5">
+                <div style="border-top: 1px solid #08D3FF; width: 100%;"></div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <h3 class="text-center" style="color:#08D3FF;">Deskripsi</h3>
+            <p class="text-center text-white">Naikkan rank anda dengan bermain bersama teman, yang dapat anda cari disini pada berbagai macam game. Bermain bersama teman <br> dapat meningkatkan performa anda baik dalam segi koordinasi dan performa</p>
+            <p class="text-center text-white mt-3">Dimana setiap teman anda akan membantu anda dalam meraih goals yang anda inginkan seperti rank ataupun pengembangan skill anda</p>
+            <p class="text-center text-white mt-3 mb-5">Anda dapat mencari berbagai macam teman dari berbagai macam segi skill. Serta kamudapat mencari sesi coaching dari pemain-pemain yang sudah pro<br> atau sudah berpengalaman.</p>
+        </div>
+
+        <div class="row mt-5">
+            <h3 class="text-center" style="color:#08D3FF;">Mengapa Kita ?</h3>
+            <img class="mt-5" src="assets/Group 25.png" alt="logo" class="d-block mx-auto mt-5">
+        </div>
+
+        <div class="row mt-5">
+            <div class="d-flex justify-content-center mb-5">
+                <div style="border-top: 1px solid #08D3FF; width: 100%;"></div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <h3 class="text-center" style="color:#08D3FF;">Cara Kerja</h3>
+            <img class="mt-5" src="assets/Group 26.png" alt="logo" class="d-block mx-auto mt-5">
+        </div>
+
+        <div class="row mt-4">
+            <div class="d-flex justify-content-center mb-5">
+                <div style="border-top: 1px solid #08D3FF; width: 100%;"></div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <h3 class="text-center" style="color:#08D3FF;">Pertanyaan Yang Sering Muncul</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-light" style="background-color:#141414; font-size: 16px; font-weight:600;">Berapa lama biasanya untuk mendpatkan teman?<br> <button type="button" style="background-color: #141414; border: 2px solid #c0f302; border-radius: 100%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" style="fill: #c0f302; margin-top: -5px;">
+                            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                        </svg></button>
+                </li>
+                <li class="list-group-item text-light" style="background-color:#141414; font-size: 16px; font-weight:600;">Saya benci teman saya, bisakah saya mengganti ke orang lain?<br> <button type="button" style="background-color: #141414; border: 2px solid #c0f302; border-radius: 100%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" style="fill: #c0f302; margin-top: -5px;">
+                            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                        </svg></button>
+                </li>
+                <li class="list-group-item text-light" style="background-color:#141414; font-size: 16px; font-weight:600;">Bagaimana jika saya tidak puas?<br> <button type="button" style="background-color: #141414; border: 2px solid #c0f302; border-radius: 100%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" style="fill: #c0f302; margin-top: -5px;">
+                            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                        </svg></button>
+                </li>
+                <li class="list-group-item text-light mb-5" style="background-color:#141414; font-size: 16px; font-weight:600;">Apakah saya bisa cancel pesanan saya?<br> <button type="button" style="background-color: #141414; border: 2px solid #c0f302; border-radius: 100%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" style="fill: #c0f302; margin-top: -5px;">
+                            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                        </svg></button>
+                </li>
+            </ul>
+        </div>
+
     </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -83,10 +304,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <p style="color: #FFBD41; " class="tengah">Pemilihan Mode</p>
     </div>
 
 </body>
