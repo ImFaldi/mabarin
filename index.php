@@ -14,8 +14,8 @@
             <div class="container-fluid">
                 <img src="assets/LOGO.png" alt="logo">
                 <form class="d-flex" role="search">
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
-                    <button class="btn btn-warning ms-3" type="submit">Log In</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Sign_In">Sign Up</button>
+                    <button class="btn btn-warning ms-3" type="button" data-bs-toggle="modal" data-bs-target="#Log_In">Log In</button>
                 </form>
             </div>
         </nav>
@@ -279,7 +279,43 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="Log_In" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4 class="text-center">Selamat Datang Di Mabarin</h4>
+                    <h5 class="text-center" style="font-weight: 400;">Belum memiliki akun? <a style="font-weight: 400;">Sign In</a></h5>
+                    <div class="input-group mb-3 mt-5 container">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3 container">
+                        <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3 container">
+                        <button class="btn btn-info w-100" type="button">Masuk</button>
+                    </div>
+                    
+                    <div class="input-group mb-3 container">
+                        <div class="col-5 mt-3 d-flex justify-content-end">
+                            <div style="border-top: 1px solid #AAAAAA; width: 100%;"></div>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-center" style="color: #AAAAAA; font-size: 18px;">Atau</p>
+                        </div>
+                        <div class="col-5 mt-3">
+                            <div style="border-top: 1px solid #AAAAAA; width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3 container">
+                        <button class="btn btn-outline-dark w-100" type="button">Sign in dengan akun Google</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Sign_In" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
@@ -292,15 +328,24 @@
                         <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3 container">
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button">Button</button>
-                            <button class="btn btn-primary" type="button">Button</button>
+                        <button class="btn btn-info w-100" type="button">Masuk</button>
+                    </div>
+                    
+                    <div class="input-group mb-3 container">
+                        <div class="col-5 mt-3 d-flex justify-content-end">
+                            <div style="border-top: 1px solid #AAAAAA; width: 100%;"></div>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-center" style="color: #AAAAAA; font-size: 18px;">Atau</p>
+                        </div>
+                        <div class="col-5 mt-3">
+                            <div style="border-top: 1px solid #AAAAAA; width: 100%;"></div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+
+                    <div class="input-group mb-3 container">
+                        <button class="btn btn-outline-dark w-100" type="button">Sign in dengan akun Google</button>
+                    </div>
                 </div>
             </div>
         </div>
