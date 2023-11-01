@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        p:before{
+            content: "";
+            display: block;
+            width: 25%;
+            height: 2px;
+            background: whitesmoke;
+            position: absolute;
+            left: 20%;
+            top: 80%;
+        }
+        .tengah{
+            margin-left: 50%;
+            margin-top: 9%;
+        }
+    </style>
 </head>
 
 <body style="background-color: #141414;">
@@ -67,6 +83,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        <p style="color: #FFBD41; " class="tengah">Pemilihan Mode</p>
     </div>
 
 </body>
